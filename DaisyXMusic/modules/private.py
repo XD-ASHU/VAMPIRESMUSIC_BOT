@@ -21,7 +21,6 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 from pyrogram.types import InlineKeyboardButton
 from pyrogram.types import Message
-from DaisyXMusic.config import SOURCE_CODE
 from DaisyXMusic.config import ASSISTANT_NAME
 from DaisyXMusic.config import PROJECT_NAME
 from DaisyXMusic.config import SUPPORT_GROUP
@@ -44,9 +43,6 @@ def _start(client, message):
                         "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
                         "💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
-                ],[
-                    InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
                 ]
             ]
         ),
